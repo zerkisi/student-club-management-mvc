@@ -1,0 +1,69 @@
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-6">
+
+            <div class="card shadow p-4">
+
+                <h2 class="text-center mb-4">
+                    Student Registration Form
+                </h2>
+
+                <form id="registerForm">
+
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Student ID</label>
+                        <input type="text" class="form-control" id="studentId">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Department</label>
+                        <select class="form-select" id="department">
+                            <option value="">Choose Department</option>
+                            <option>Computer Engineering</option>
+                            <option>Software Engineering</option>
+                            <option>Industrial Engineering</option>
+                            <option>Electrical Engineering</option>
+                            <option>Artificial Intelligence Engineering</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Club Selection</label>
+                        <select class="form-select" id="club">
+                            <option value="">Choose Club</option>
+                            <option>Software Club</option>
+                            <option>AI Club</option>
+                            <option>Robotics Club</option>
+                            <option>Cyber Security Club</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">
+                        Register
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

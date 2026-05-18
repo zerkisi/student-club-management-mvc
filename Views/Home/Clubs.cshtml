@@ -1,0 +1,80 @@
+@{
+    ViewData["Title"] = "Clubs";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">University Clubs</h1>
+
+    <div class="row">
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow h-100">
+                <div class="card-body">
+                    <h5>Software Club</h5>
+                    <p>Students improve coding, web development and project skills.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#softwareModal">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow h-100">
+                <div class="card-body">
+                    <h5>AI Club</h5>
+                    <p>Members work on artificial intelligence and machine learning projects.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aiModal">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow h-100">
+                <div class="card-body">
+                    <h5>Robotics Club</h5>
+                    <p>Students design robots, circuits and automation systems.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#roboticsModal">View Details</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade" id="softwareModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><h5>Software Club Details</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <p><strong>Area:</strong> Web development and coding</p>
+                <p><strong>Members:</strong> 120 students</p>
+                <p><strong>Goal:</strong> Improve programming and teamwork skills.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="aiModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><h5>AI Club Details</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <p><strong>Area:</strong> Artificial intelligence and data science</p>
+                <p><strong>Members:</strong> 95 students</p>
+                <p><strong>Goal:</strong> Develop AI-based student projects.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="roboticsModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><h5>Robotics Club Details</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body">
+                <p><strong>Area:</strong> Robot design and automation</p>
+                <p><strong>Members:</strong> 80 students</p>
+                <p><strong>Goal:</strong> Build robotic systems and join competitions.</p>
+            </div>
+        </div>
+    </div>
+</div>
