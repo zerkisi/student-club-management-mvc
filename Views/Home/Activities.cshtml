@@ -3,91 +3,305 @@
 }
 
 <div class="container mt-5">
-    <h1 class="text-center mb-3">Upcoming Activities</h1>
-    <p class="text-center text-muted mb-5">Students can view activity details and join upcoming club events.</p>
+
+    <h1 class="text-center mb-3">
+        Upcoming Activities
+    </h1>
+
+    <p class="text-center text-muted mb-5">
+        Students can view activity details and join upcoming club events.
+    </p>
 
     <div class="row">
 
-        <div class="col-md-4 mb-4">
-            <div class="card shadow h-100">
-                <div class="card-body">
-                    <span class="badge bg-primary mb-2">Technology</span>
-                    <h4>AI Workshop</h4>
-                    <p>Introduction to artificial intelligence and machine learning applications.</p>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aiWorkshopModal">Join Event</button>
-                </div>
-            </div>
-        </div>
+        <!-- AI WORKSHOP -->
 
         <div class="col-md-4 mb-4">
+
             <div class="card shadow h-100">
+
+                <img
+                    src="~/images/activity-ai.jpg"
+                    class="card-img-top"
+                    alt="AI Workshop"
+                >
+
                 <div class="card-body">
-                    <span class="badge bg-success mb-2">Robotics</span>
-                    <h4>Robotics Competition</h4>
-                    <p>Students build and compete with autonomous robots.</p>
-                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#roboticsCompetitionModal">Join Event</button>
+
+                    <span class="badge bg-primary mb-2">
+                        Technology
+                    </span>
+
+                    <h4 class="card-title">
+                        AI Workshop
+                    </h4>
+
+                    <p class="card-text">
+                        Introduction to artificial intelligence and machine learning applications.
+                    </p>
+
+                    <button
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#aiWorkshopModal"
+                    >
+                        Join Event
+                    </button>
+
                 </div>
+
             </div>
+
         </div>
 
+        <!-- ROBOTICS COMPETITION -->
+
         <div class="col-md-4 mb-4">
+
             <div class="card shadow h-100">
+
+                <img
+                    src="~/images/activity-robotics.jpg"
+                    class="card-img-top"
+                    alt="Robotics Competition"
+                >
+
                 <div class="card-body">
-                    <span class="badge bg-danger mb-2">Cyber Security</span>
-                    <h4>Security Seminar</h4>
-                    <p>Learn ethical hacking and cyber security fundamentals.</p>
-                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#securitySeminarModal">Join Event</button>
+
+                    <span class="badge bg-success mb-2">
+                        Robotics
+                    </span>
+
+                    <h4 class="card-title">
+                        Robotics Competition
+                    </h4>
+
+                    <p class="card-text">
+                        Students build and compete with autonomous robots.
+                    </p>
+
+                    <button
+                        class="btn btn-success"
+                        data-bs-toggle="modal"
+                        data-bs-target="#roboticsCompetitionModal"
+                    >
+                        Join Event
+                    </button>
+
                 </div>
+
             </div>
+
+        </div>
+
+        <!-- SECURITY SEMINAR -->
+
+        <div class="col-md-4 mb-4">
+
+            <div class="card shadow h-100">
+
+                <img
+                    src="~/images/activity-security.jpg"
+                    class="card-img-top"
+                    alt="Security Seminar"
+                >
+
+                <div class="card-body">
+
+                    <span class="badge bg-danger mb-2">
+                        Cyber Security
+                    </span>
+
+                    <h4 class="card-title">
+                        Security Seminar
+                    </h4>
+
+                    <p class="card-text">
+                        Learn ethical hacking and cyber security fundamentals.
+                    </p>
+
+                    <button
+                        class="btn btn-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#securitySeminarModal"
+                    >
+                        Join Event
+                    </button>
+
+                </div>
+
+            </div>
+
         </div>
 
     </div>
+
 </div>
+
+<!-- AI WORKSHOP MODAL -->
 
 <div class="modal fade" id="aiWorkshopModal" tabindex="-1">
+
     <div class="modal-dialog">
+
         <div class="modal-content">
-            <div class="modal-header"><h5>AI Workshop Registration</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    AI Workshop Registration
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                ></button>
+
+            </div>
+
             <div class="modal-body">
+
+                <p><strong>Event:</strong> AI Workshop</p>
                 <p><strong>Date:</strong> 25 May 2026</p>
                 <p><strong>Location:</strong> Computer Lab 2</p>
+                <p><strong>Description:</strong> Students will learn basic machine learning concepts and AI project examples.</p>
                 <p class="text-success"><strong>Status:</strong> You can join this event.</p>
+
             </div>
+
             <div class="modal-footer">
-                <button class="btn btn-primary" data-bs-dismiss="modal">Confirm Join</button>
+
+                <button
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                >
+                    Cancel
+                </button>
+
+                <button
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                >
+                    Confirm Join
+                </button>
+
             </div>
+
         </div>
+
     </div>
+
 </div>
+
+<!-- ROBOTICS COMPETITION MODAL -->
 
 <div class="modal fade" id="roboticsCompetitionModal" tabindex="-1">
+
     <div class="modal-dialog">
+
         <div class="modal-content">
-            <div class="modal-header"><h5>Robotics Competition Registration</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Robotics Competition Registration
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                ></button>
+
+            </div>
+
             <div class="modal-body">
+
+                <p><strong>Event:</strong> Robotics Competition</p>
                 <p><strong>Date:</strong> 28 May 2026</p>
                 <p><strong>Location:</strong> Engineering Workshop</p>
+                <p><strong>Description:</strong> Students will design, build and test small autonomous robot systems.</p>
                 <p class="text-success"><strong>Status:</strong> You can join this event.</p>
+
             </div>
+
             <div class="modal-footer">
-                <button class="btn btn-success" data-bs-dismiss="modal">Confirm Join</button>
+
+                <button
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                >
+                    Cancel
+                </button>
+
+                <button
+                    class="btn btn-success"
+                    data-bs-dismiss="modal"
+                >
+                    Confirm Join
+                </button>
+
             </div>
+
         </div>
+
     </div>
+
 </div>
 
+<!-- SECURITY SEMINAR MODAL -->
+
 <div class="modal fade" id="securitySeminarModal" tabindex="-1">
+
     <div class="modal-dialog">
+
         <div class="modal-content">
-            <div class="modal-header"><h5>Security Seminar Registration</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Security Seminar Registration
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                ></button>
+
+            </div>
+
             <div class="modal-body">
+
+                <p><strong>Event:</strong> Security Seminar</p>
                 <p><strong>Date:</strong> 30 May 2026</p>
                 <p><strong>Location:</strong> Seminar Hall</p>
+                <p><strong>Description:</strong> Students will learn cyber security basics and ethical hacking concepts.</p>
                 <p class="text-success"><strong>Status:</strong> You can join this event.</p>
+
             </div>
+
             <div class="modal-footer">
-                <button class="btn btn-danger" data-bs-dismiss="modal">Confirm Join</button>
+
+                <button
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                >
+                    Cancel
+                </button>
+
+                <button
+                    class="btn btn-danger"
+                    data-bs-dismiss="modal"
+                >
+                    Confirm Join
+                </button>
+
             </div>
+
         </div>
+
     </div>
+
 </div>
