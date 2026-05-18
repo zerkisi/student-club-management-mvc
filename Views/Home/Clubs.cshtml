@@ -3,78 +3,239 @@
 }
 
 <div class="container mt-5">
-    <h1 class="text-center mb-4">University Clubs</h1>
+
+    <h1 class="text-center mb-3">
+        University Clubs
+    </h1>
+
+    <p class="text-center text-muted mb-5">
+        Students can explore active university clubs and their details.
+    </p>
 
     <div class="row">
 
-        <div class="col-md-4 mb-4">
-            <div class="card shadow h-100">
-                <div class="card-body">
-                    <h5>Software Club</h5>
-                    <p>Students improve coding, web development and project skills.</p>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#softwareModal">View Details</button>
-                </div>
-            </div>
-        </div>
+        <!-- SOFTWARE CLUB -->
 
         <div class="col-md-4 mb-4">
+
             <div class="card shadow h-100">
+
+                <img 
+                    src="~/images/students.jpg"
+                    class="card-img-top"
+                    alt="Software Club"
+                >
+
                 <div class="card-body">
-                    <h5>AI Club</h5>
-                    <p>Members work on artificial intelligence and machine learning projects.</p>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aiModal">View Details</button>
+
+                    <h4 class="card-title">
+                        Software Club
+                    </h4>
+
+                    <p class="card-text">
+                        Students improve coding, web development and project management skills.
+                    </p>
+
+                    <button 
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#softwareModal"
+                    >
+                        View Details
+                    </button>
+
                 </div>
+
             </div>
+
         </div>
 
+        <!-- AI CLUB -->
+
         <div class="col-md-4 mb-4">
+
             <div class="card shadow h-100">
+
+                <img 
+                    src="~/images/ai.jpg"
+                    class="card-img-top"
+                    alt="AI Club"
+                >
+
                 <div class="card-body">
-                    <h5>Robotics Club</h5>
-                    <p>Students design robots, circuits and automation systems.</p>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#roboticsModal">View Details</button>
+
+                    <h4 class="card-title">
+                        AI Club
+                    </h4>
+
+                    <p class="card-text">
+                        Members work on artificial intelligence and machine learning projects.
+                    </p>
+
+                    <button 
+                        class="btn btn-success"
+                        data-bs-toggle="modal"
+                        data-bs-target="#aiModal"
+                    >
+                        View Details
+                    </button>
+
                 </div>
+
             </div>
+
+        </div>
+
+        <!-- ROBOTICS CLUB -->
+
+        <div class="col-md-4 mb-4">
+
+            <div class="card shadow h-100">
+
+                <img 
+                    src="~/images/robotics.jpg"
+                    class="card-img-top"
+                    alt="Robotics Club"
+                >
+
+                <div class="card-body">
+
+                    <h4 class="card-title">
+                        Robotics Club
+                    </h4>
+
+                    <p class="card-text">
+                        Students design robots, sensors and automation systems.
+                    </p>
+
+                    <button 
+                        class="btn btn-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#roboticsModal"
+                    >
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
         </div>
 
     </div>
+
 </div>
+
+<!-- SOFTWARE MODAL -->
 
 <div class="modal fade" id="softwareModal" tabindex="-1">
+
     <div class="modal-dialog">
+
         <div class="modal-content">
-            <div class="modal-header"><h5>Software Club Details</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
-            <div class="modal-body">
-                <p><strong>Area:</strong> Web development and coding</p>
-                <p><strong>Members:</strong> 120 students</p>
-                <p><strong>Goal:</strong> Improve programming and teamwork skills.</p>
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Software Club Details
+                </h5>
+
+                <button 
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                ></button>
+
             </div>
+
+            <div class="modal-body">
+
+                <p><strong>Members:</strong> 120 Students</p>
+
+                <p><strong>Focus:</strong> Web development, software engineering and coding competitions.</p>
+
+                <p><strong>Goal:</strong> Improve teamwork and software project development skills.</p>
+
+            </div>
+
         </div>
+
     </div>
+
 </div>
+
+<!-- AI MODAL -->
 
 <div class="modal fade" id="aiModal" tabindex="-1">
+
     <div class="modal-dialog">
+
         <div class="modal-content">
-            <div class="modal-header"><h5>AI Club Details</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
-            <div class="modal-body">
-                <p><strong>Area:</strong> Artificial intelligence and data science</p>
-                <p><strong>Members:</strong> 95 students</p>
-                <p><strong>Goal:</strong> Develop AI-based student projects.</p>
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    AI Club Details
+                </h5>
+
+                <button 
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                ></button>
+
             </div>
+
+            <div class="modal-body">
+
+                <p><strong>Members:</strong> 95 Students</p>
+
+                <p><strong>Focus:</strong> Artificial intelligence, machine learning and data science.</p>
+
+                <p><strong>Goal:</strong> Build AI-based student projects and organize workshops.</p>
+
+            </div>
+
         </div>
+
     </div>
+
 </div>
 
+<!-- ROBOTICS MODAL -->
+
 <div class="modal fade" id="roboticsModal" tabindex="-1">
+
     <div class="modal-dialog">
+
         <div class="modal-content">
-            <div class="modal-header"><h5>Robotics Club Details</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
-            <div class="modal-body">
-                <p><strong>Area:</strong> Robot design and automation</p>
-                <p><strong>Members:</strong> 80 students</p>
-                <p><strong>Goal:</strong> Build robotic systems and join competitions.</p>
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Robotics Club Details
+                </h5>
+
+                <button 
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                ></button>
+
             </div>
+
+            <div class="modal-body">
+
+                <p><strong>Members:</strong> 80 Students</p>
+
+                <p><strong>Focus:</strong> Robotics systems, sensors and automation technologies.</p>
+
+                <p><strong>Goal:</strong> Participate in robotic competitions and engineering projects.</p>
+
+            </div>
+
         </div>
+
     </div>
+
 </div>
