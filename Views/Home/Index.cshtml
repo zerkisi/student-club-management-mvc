@@ -2,7 +2,7 @@
     ViewData["Title"] = "Home";
 }
 
-<div class="container-fluid bg-dark text-white py-5">
+<section class="hero-section text-white">
 
     <div class="container">
 
@@ -10,8 +10,8 @@
 
             <div class="col-md-7">
 
-                <span class="badge bg-primary mb-3">
-                    ASP.NET MVC Project
+                <span class="badge bg-light text-primary mb-3">
+                    ASP.NET Core MVC Project
                 </span>
 
                 <h1 class="display-4 fw-bold">
@@ -19,7 +19,7 @@
                 </h1>
 
                 <p class="lead mt-3">
-                    Manage university clubs, activities and student registrations using ASP.NET Core MVC.
+                    Manage university clubs, student registrations and campus activities with a responsive MVC web application.
                 </p>
 
                 <a href="/Home/Register" class="btn btn-light btn-lg mt-3">
@@ -34,37 +34,150 @@
 
             <div class="col-md-5 mt-4 mt-md-0">
 
-                <div class="card shadow">
+                <img 
+                    src="~/images/campus.jpg"
+                    class="img-fluid rounded shadow"
+                    alt="Campus Image"
+                >
 
-                    <div class="card-body text-dark">
+            </div>
 
-                        <h4 class="mb-3">
-                            Project Features
-                        </h4>
+        </div>
 
-                        <ul class="list-group">
+    </div>
 
-                            <li class="list-group-item">
-                                ASP.NET Core MVC Architecture
-                            </li>
+</section>
 
-                            <li class="list-group-item">
-                                Bootstrap Responsive Design
-                            </li>
+<section class="container mt-5">
 
-                            <li class="list-group-item">
-                                Student Management System
-                            </li>
+    <h2 class="text-center mb-2">
+        Dashboard Overview
+    </h2>
 
-                            <li class="list-group-item">
-                                Activity Registration
-                            </li>
+    <p class="text-center text-muted mb-5">
+        Summary information about clubs, students and activities.
+    </p>
 
-                            <li class="list-group-item">
-                                JavaScript Form Validation
-                            </li>
+    <div class="row">
 
-                        </ul>
+        <div class="col-md-3 mb-4">
+            <div class="card shadow text-center dashboard-card">
+                <div class="card-body">
+                    <h5>Total Clubs</h5>
+                    <h2 class="text-primary">12</h2>
+                    <p class="text-muted mb-0">Active communities</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card shadow text-center dashboard-card">
+                <div class="card-body">
+                    <h5>Total Students</h5>
+                    <h2 class="text-success">350</h2>
+                    <p class="text-muted mb-0">Registered members</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card shadow text-center dashboard-card">
+                <div class="card-body">
+                    <h5>Activities</h5>
+                    <h2 class="text-danger">8</h2>
+                    <p class="text-muted mb-0">Upcoming events</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card shadow text-center dashboard-card">
+                <div class="card-body">
+                    <h5>Departments</h5>
+                    <h2 class="text-warning">5</h2>
+                    <p class="text-muted mb-0">Academic fields</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container mt-4 mb-5">
+
+    <div class="row">
+
+        <div class="col-md-6 mb-4">
+
+            <div class="card shadow h-100">
+
+                <div class="card-body">
+
+                    <h4 class="mb-3">
+                        Most Popular Clubs
+                    </h4>
+
+                    <p class="text-muted">
+                        Participation rates of the most active clubs.
+                    </p>
+
+                    <div class="mb-3">
+                        <label class="mb-1">Software Club</label>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%;">
+                                90%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="mb-1">AI Club</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 75%;">
+                                75%
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="mb-1">Robotics Club</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" style="width: 60%;">
+                                60%
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6 mb-4">
+
+            <div class="card shadow h-100">
+
+                <div class="card-body">
+
+                    <h4 class="mb-3">
+                        Latest Announcements
+                    </h4>
+
+                    <div class="list-group">
+
+                        <div class="list-group-item">
+                            AI Workshop registrations are now open.
+                        </div>
+
+                        <div class="list-group-item">
+                            Robotics competition will be held next week.
+                        </div>
+
+                        <div class="list-group-item">
+                            New students can register from the registration page.
+                        </div>
 
                     </div>
 
@@ -76,88 +189,4 @@
 
     </div>
 
-</div>
-
-<div class="container mt-5">
-
-    <h2 class="text-center mb-5">
-        Dashboard Overview
-    </h2>
-
-    <div class="row">
-
-        <div class="col-md-3 mb-4">
-
-            <div class="card shadow text-center">
-
-                <div class="card-body">
-
-                    <h5>Total Clubs</h5>
-
-                    <h2 class="text-primary">
-                        12
-                    </h2>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="col-md-3 mb-4">
-
-            <div class="card shadow text-center">
-
-                <div class="card-body">
-
-                    <h5>Total Students</h5>
-
-                    <h2 class="text-success">
-                        350
-                    </h2>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="col-md-3 mb-4">
-
-            <div class="card shadow text-center">
-
-                <div class="card-body">
-
-                    <h5>Activities</h5>
-
-                    <h2 class="text-danger">
-                        8
-                    </h2>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="col-md-3 mb-4">
-
-            <div class="card shadow text-center">
-
-                <div class="card-body">
-
-                    <h5>Departments</h5>
-
-                    <h2 class="text-warning">
-                        5
-                    </h2>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
+</section>

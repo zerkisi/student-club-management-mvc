@@ -97,3 +97,4 @@ C:\Users\elif.erkisi\Downloads\StudentClubManagementSystem\obj\Debug\net10.0\Stu
 C:\Users\elif.erkisi\Downloads\StudentClubManagementSystem\obj\Debug\net10.0\ref\StudentClubManagementSystem.dll
 C:\Users\elif.erkisi\Downloads\StudentClubManagementSystem\obj\Debug\net10.0\compressed\el19znt9w8-{0}-bonp90xr5p-bonp90xr5p.gz
 C:\Users\elif.erkisi\Downloads\StudentClubManagementSystem\obj\Debug\net10.0\compressed\tuvrr0p2pl-{0}-kj8izwcgkj-kj8izwcgkj.gz
+C:\Users\elif.erkisi\Downloads\StudentClubManagementSystem\obj\Debug\net10.0\StudentClubManagementSystem.sourcelink.json
